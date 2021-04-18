@@ -111,12 +111,25 @@ body {
     padding: 15px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all .2s;
 }
 
 .btn-white {
         background: #fff;
         color: #777;
 }
+
+.btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transform: translateY(-1px);
+}
+
+
 
 @keyframes moveInLeft {
     0% {
