@@ -44,6 +44,7 @@ body {
         justify-content: flex-start;
     height: 75vh;
     padding-top: 20px;
+    position: relative;
 }
 
 .header-nav-area {
@@ -67,13 +68,15 @@ body {
 }
 
 .text-box {
-    /* margin-top: 175px; */
-    /* background: red; */
-    margin-top: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -83%);
 
 }
 
 .heading-primary {
+    backface-visibility: hidden;
     color: #fff;
     display: flex;
         align-items: center;
@@ -83,14 +86,49 @@ body {
 
 .heading-primary-main {
     /* font-size: 3.75rem; */
+    animation: moveInLeft 1s ease-out;
     font-size: 6vw;
     font-weight: 400;
-    letter-spacing: 2rem;
+    letter-spacing: 2.3rem;
 }
 
 .heading-primary-sub {
     /* font-size: 1.25rem; */
+    animation: moveInRight 1s ease-out;
     font-size: 2vw;
-    font-weight: 700;
-    letter-spacing: 1.025rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
 }
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+    @keyframes moveInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        80% {
+            transform: translateX(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}/* END OF MAIN.CSS */
