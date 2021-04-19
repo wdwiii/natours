@@ -109,6 +109,7 @@ body {
     color: #000;
     display: inline-block;
     padding: 15px;
+    position: relative;
     text-transform: uppercase;
     text-decoration: none;
     transition: all .2s;
@@ -129,7 +130,32 @@ body {
     transform: translateY(-1px);
 }
 
+.btn::after {
+    border-radius: 50px;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+        top: 0;
+        left: 0;
+    transition: all .4s;
+    width: 100%;
+    z-index: -1;
+}
 
+.btn-white::after {
+        background-color: #fff;
+}
+
+.btn:hover::after {
+    opacity: 0;
+    transform: scaleX(1.4) scaleY(1.6);
+}
+
+.btn-animated {
+    animation: moveInBottom 1s ease-out .3s;
+    animation-fill-mode: backwards;
+}
 
 @keyframes moveInLeft {
     0% {
@@ -162,6 +188,19 @@ body {
             transform: translateX(0);
         }
     }
+
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 }/*===========================
 END OF MAIN.CSS AUTHOR STYLES
 ==============================*/
