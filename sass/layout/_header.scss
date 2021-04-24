@@ -1,0 +1,54 @@
+.header {
+background-image: linear-gradient(
+   to right bottom, rgba($color-primary-light, 0.8),
+   rgba($color-primary-dark, 0.8)),
+   url('../img/hero.jpg');
+background-position: top;
+background-size: cover;
+display: flex;
+   justify-content: center;
+clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+height: 95vh;
+/* position: relative; */
+
+
+    &__content-wrapper {
+      display: flex;
+          /* align-items: flex-start; */
+          flex-direction: column;
+          flex-basis: 95%;
+          justify-content: flex-start;
+      height: 75vh;
+      padding-top: 2rem;
+      position: relative;
+    }
+
+    &__nav-area {
+      display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+    }
+
+    &__logo {
+      height: 3.5rem;
+    }
+
+    &__logo-box {
+      /* display: flex;
+      height: fit-content; */
+    }
+
+    &__menu-icon {
+    color: $color-white;
+    font-size: 2rem;
+    }
+
+    &__text-box {
+    position: absolute;
+       top: 60%;
+       left: 50%;
+       transform: translate(-50%, -83%);
+    text-align: center;
+    }
+
+}

@@ -1,0 +1,38 @@
+.content-wrapper {
+    box-sizing: border-box;
+    display: inherit;
+    // flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+.half-width {
+    flex: 1 1 50%;
+}
+
+.third-width {
+    flex: 1 1 33.33%;
+
+}
+
+.quarter-width {
+    flex: 1 1 25%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+}
