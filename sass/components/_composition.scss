@@ -1,0 +1,35 @@
+.composition {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &__photo {
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        width:  55%;
+
+        &:hover {
+            border: 1rem solid $color-primary;
+            transform: scale(1.2);
+            z-index: 1;
+            @extend .u-padding-xs;
+        }
+
+        &--p1 {
+            left:0;
+            top: 0;
+
+        }
+
+        &--p2 {
+            right: 0;
+            top: 13%;
+        }
+
+        &--p3 {
+            bottom: 0;
+            left: 20%;
+        }
+    }
+}
