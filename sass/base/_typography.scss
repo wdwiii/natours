@@ -34,7 +34,7 @@ body {
         }
 }
 
-.header-secondary {
+.heading-secondary {
     flex: 1 1 100%;
     text-align: center;
 
@@ -54,4 +54,16 @@ body {
                 text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
             }
         }
+}
+
+.heading__tertiary {
+    font-size: $default-font-size;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    @extend .u-margin-bottom-small;
 }
