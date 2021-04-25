@@ -1,7 +1,7 @@
 .content-wrapper {
     box-sizing: border-box;
     display: inherit;
-    // flex: 1 1 100%;
+    flex: 1 1 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -13,16 +13,16 @@
 }
 
 .half-width {
-    flex: 1 1 50%;
+    flex: 0 1 49%;
 }
 
 .third-width {
-    flex: 1 1 33.33%;
+    flex: 0 1 33%;
 
 }
 
 .quarter-width {
-    flex: 1 1 25%;
+    flex: 0 1 24%;
 }
 
 body {
