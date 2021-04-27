@@ -4,7 +4,8 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "compile:fontawesome": "node-sass sass/fontawesome-icons/fontawesome.scss css/fontawesome.css -w"
   },
   "repository": {
     "type": "git",
