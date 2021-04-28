@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+node_modules/
+css/fontawesome.css
+css/main.css
+sass/main.scss
