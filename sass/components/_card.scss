@@ -92,7 +92,7 @@
         font-weight: 300;
         text-align: right;
         text-transform: uppercase;
-        width: 90%;
+        //width: 90%;
 
         &--orange {
             background-color: rgba($color-secondary-dark, .8);
@@ -113,8 +113,8 @@
 
     &__cta {
         align-items: center;
-        align-self: center;
-        height: 60%;
+        height: 65%;
+        justify-content: flex-end;
     }
 
     &__price-only {
