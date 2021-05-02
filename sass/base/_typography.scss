@@ -48,8 +48,8 @@ body {
             @include textGradient;
 
             &:hover {
-                transform: skewY(-9deg) skewX(-15deg) scale(1.1);
-                text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2); //Creates text tilt animation on hover
+                transform: scale(1.1);
+                text-shadow: $shadow-2; //Creates text tilt animation on hover
             }
         }
 }
