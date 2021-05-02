@@ -1,0 +1,129 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Card Functionality
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.card {
+    height: 50rem;
+    width: 80%;
+    perspective: 150rem; //To add smoothness to card during rotation
+    -moz-perspective: 150rem; //For Firefox compatibility
+    position: relative;
+
+    &__side {
+        backface-visibility: hidden; //Hides content of the card on "back side" after rotation
+        border-radius: 3px;
+        box-shadow: $shadow-1;
+        color: $color-white;
+        font-size: $default-font-size;
+        height: 50rem;
+        position: absolute;
+            left: 0;
+            top: 0;
+        transition: all .8s ease;
+        width: 100%;
+
+        &--front {
+            background-color: $color-gray-light-1;
+
+            &-1 {
+
+            }
+
+            &-2 {
+
+            }
+
+            &-3 {
+
+            }
+        }
+
+
+        &--back {
+            transform: rotateY(180deg); //Allows "back side" of card to be in corrent orientation so content displays properly when card is rotated
+            background-color: $color-primary-light;
+            justify-content: center;
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Font Card Styling
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+
+        &-1 {
+            background-image: url('../img/nat-5.jpg');
+        }
+
+        &-2 {
+            background-image: url('../img/nat-6.jpg');
+        }
+
+        &-3 {
+            background-image: url('../img/nat-7.jpg');
+        }
+    }
+
+    &__heading {
+        color: $color-white;
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        width: 90%;
+
+        &--orange {
+            background-color: rgba($color-secondary-dark, .8);
+        }
+
+        &--green {
+            background-color: rgba($color-primary-dark, .8);
+        }
+
+        &--blue {
+            background-color: rgba($color-tertiary-dark, .8);
+        }
+    }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Back Card Styling
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    &__cta {
+        align-items: center;
+        align-self: center;
+        height: 60%;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-weight: 100;
+        font-size: 6rem;
+    }
+}
