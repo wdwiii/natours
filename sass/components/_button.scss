@@ -45,7 +45,7 @@
     }
 
     &:hover {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    box-shadow: $shadow-1;
     transform: translateY(-.3rem);
 
         &::after {
@@ -55,7 +55,7 @@
     }
 
     &:active {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    box-shadow: $shadow-1;
     transform: translateY(-.1rem);
     }
 

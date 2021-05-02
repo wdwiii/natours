@@ -4,17 +4,12 @@
     margin-top: -20vh;
 
     &__content-wrapper {
-        //@extend .content-wrapper;
         flex: 0 1 80%;
-    }
-
-    &__text-container {
-        @extend .u-padding-right-med;
     }
 
 }
 
-.section-tours {
+.section-feature {
     background-image: linear-gradient(
        to right bottom, rgba($color-primary-light, 0.8),
        rgba($color-primary-dark, 0.8)),
@@ -33,4 +28,14 @@
     &__content-wrapper {
         flex: 0 1 95%;
     }
+}
+
+.section-tours {
+    margin-top: -10vh;
+    padding: 25rem 0;
+
+    &__content-wrapper {
+            justify-content: center;
+    }
+
 }

@@ -1,5 +1,4 @@
 .feature-box {
-    display: flex;
     flex-basis: 25%;
     justify-content: center;
     transition: .2s;
@@ -11,11 +10,9 @@
     &__content-wrapper {
         background-color: rgba($color-white, .8);
         border-radius: 1.5rem;
-        box-shadow: 1rem 1rem 4rem rgba($color-black, .4);
-        display: flex;
-            align-items: center;
-            flex-basis: 75%;
-            flex-direction: column;
+        box-shadow: $shadow-2;
+        align-items: center;
+        flex-basis: 75%;
         text-align: center;
     }
 
@@ -24,7 +21,6 @@
         font-size: $fa-font-size-base;
         @extend %fa-icon;
         @extend .fas;
-        @extend .u-margin-bottom-small;
         @include textGradient;
 
 

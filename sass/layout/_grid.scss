@@ -25,14 +25,18 @@
     flex: 0 1 25%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 .main-section {
     display: flex;
         flex-basis: 100%;
         justify-content: center;
         flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }

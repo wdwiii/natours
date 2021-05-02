@@ -5,27 +5,22 @@ background-image: linear-gradient(
    url('../img/hero.jpg');
 background-position: top;
 background-size: cover;
-display: flex;
-   justify-content: center;
+justify-content: center;
 clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //Creates polygon shape for the header
 height: 95vh;
-o
+
 
     &__content-wrapper {
-      display: flex;
-          /* align-items: flex-start; */
-          flex-direction: column;
-          flex-basis: 95%;
-          justify-content: flex-start;
+      flex-basis: 95%;
+      justify-content: flex-start;
       height: 75vh;
       padding-top: 2rem;
       position: relative;
     }
 
     &__nav-area {
-      display: flex;
-          flex-direction: row;
-          justify-content: space-between;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     &__logo {
@@ -33,8 +28,7 @@ o
     }
 
     &__logo-box {
-      /* display: flex;
-      height: fit-content; */
+
     }
 
     &__menu-icon {
