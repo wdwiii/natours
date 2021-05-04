@@ -37,5 +37,12 @@
     &__content-wrapper {
             justify-content: center;
     }
+}
 
+.section-stories {
+    padding: 15rem 0;
+
+    &__content-wrapper {
+        flex: 0 1 75%;
+    }
 }
