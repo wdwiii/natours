@@ -11,7 +11,7 @@
 
     &__side {
         backface-visibility: hidden; //Hides content of the card on "back side" after rotation
-        border-radius: 5px;
+        border-radius: 10px;
         box-shadow: $shadow-1;
         color: $color-white;
         font-size: $default-font-size;
@@ -91,7 +91,6 @@
     }
 
     &__heading {
-        color: $color-white;
         font-size: 3rem;
         font-weight: 300;
         position: absolute;
@@ -117,6 +116,25 @@
 
         &--blue {
             background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    &__details {
+        justify-content: center;
+
+        ul {
+            list-style: none;
+            width: 80%;
+
+            li{
+                color: $color-black;
+                padding: 1rem;
+                text-align: center;
+
+                &:not(:last-child) {
+                        border-bottom: 1px solid $color-gray-light-2;
+                }
+            }
         }
     }
 
