@@ -1,0 +1,34 @@
+.story {
+    background-color: rgba($color-white, .4);
+    border-radius: $default-border-radius;
+    box-shadow: $shadow-1;
+    transform: skewX(-7deg);
+    @extend .u-padding-big;
+    padding-left: 8rem;
+    @extend .u-margin-bottom-med;
+
+
+    &__shape {
+        background-color: $color-tertiary-dark;
+        clip-path: circle(50% at 50% 50%);
+        float: left;
+        height: 15rem;
+        position: relative;
+        shape-outside: circle(50% at 50% 50%);
+        transform: translateX(-2rem) skewX(7deg);
+        width: 15rem;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+    }
+
+    &__img {
+        height: 100%;
+        position: absolute;
+            left:-25%;
+    }
+
+    .heading__tertiary,
+    .paragraph {
+        transform: skewX(7deg);
+    }
+}
