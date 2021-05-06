@@ -32,6 +32,7 @@
 <<body class="flex-col">
 
     <header class="header flex">
+
         <div class="header__content-wrapper flex-col">
             <div class="header__nav-area flex">
                 <div class="header__logo-box">
@@ -46,7 +47,9 @@
                     <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+                </div>
             </div>
         </div>
 
@@ -125,16 +128,16 @@
                         <div class="card__picture card__picture-1 ">
                             &nbsp;
                         </div>
-                        <h3 class="card__heading u-margin-bottom-xs">
-                            <span class="card__heading card__heading--orange">The sea explorer</span>
-                        </h3>
-                        <div class="card__details">
+                        <h4 class="card__heading u-margin-bottom-xs">
+                            <span class="card__heading-span card__heading-span--orange">The sea explorer</span>
+                        </h4>
+                        <div class="card__details flex">
                             <ul>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
+                                <li>3 day tour</li>
+                                <li>Up to 30 people</li>
+                                <li>2 tour guides</li>
+                                <li>Stay in cozy hotels</li>
+                                <li>Difficulty: easy</li>
                             </ul>
                         </div>
                     </div>
@@ -155,16 +158,16 @@
                         <div class="card__picture card__picture-2">
                             &nbsp;
                         </div>
-                        <h3 class="card__heading u-margin-bottom-xs">
-                            <span class="card__heading card__heading--green">The forest hiker</span>
-                        </h3>
-                        <div class="card__details">
+                        <h4 class="card__heading u-margin-bottom-xs">
+                            <span class="card__heading-span card__heading-span--green">The forest hiker</span>
+                        </h4>
+                        <div class="card__details flex">
                             <ul>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
-                                <li class="card__details-item"></li>
+                                <li>7 day tour</li>
+                                <li>Up to 40 people</li>
+                                <li>6 tour guides</li>
+                                <li>Sleep in provided tents</li>
+                                <li>Difficulty: medium</li>
                             </ul>
                         </div>
                     </div>
@@ -185,16 +188,16 @@
                         <div class="card__picture card__picture-3">
                             &nbsp;
                         </div>
-                        <h3 class="card__heading u-margin-bottom-xs">
-                            <span class="card__heading card__heading--blue">The snow adventurer</span>
-                        </h3>
-                        <div class="card__details">
+                        <h4 class="card__heading u-margin-bottom-xs">
+                            <span class=" card__heading-span card__heading-span--blue">The snow adventurer</span>
+                        </h4>
+                        <div class="card__details flex">
                             <ul>
-                                <li class="card__details-item">List</li>
-                                <li class="card__details-item">List</li>
-                                <li class="card__details-item">List</li>
-                                <li class="card__details-item">List</li>
-                                <li class="card__details-item">List</li>
+                                <li>5 day tour</li>
+                                <li>Up to 15 people</li>
+                                <li>3 tour guides</li>
+                                <li>Sleep in provided tents</li>
+                                <li>Difficulty: hard</li>
                             </ul>
                         </div>
                     </div>
@@ -209,6 +212,45 @@
                 </div>
             </div>
 
+            <div class="btn-wrapper">
+                <a href="#" class="btn btn--green btn--animated">Discover All Tours</a>
+            </div>
+        </section>
+
+        <section class="main-section section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay loop muted>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/mp4">
+                        This browser is not supported
+                </video>
+            </div>
+            <div class="heading-secondary">
+                <h2 class="heading-secondary__main u-margin-bottom-big">
+                    We make people genuinely happy
+                </h2>
+            </div>
+
+            <div class="section-stories__content-wrapper content-wrapper flex-col">
+                <div class="story">
+                    <figure class="story__shape">
+                        <figcaption class="story__caption">Luna Wibsey</figcaption>
+                        <img src="img/nat-8.jpg" alt="nat-8" class="story__img">
+                    </figure>
+                    <h3 class="heading__tertiary  u-margin-bottom-xs">I had the best week ever with my family</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi inventore quis pariatur vel voluptatem maiores, incidunt quam hic sapiente doloremque, officia deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi inventore quis pariatur vel voluptatem maiores, incidunt quam hic sapiente doloremque, officia deserunt.</p>
+                </div>
+
+                <div class="story">
+                    <figure class="story__shape">
+                        <figcaption class="story__caption">Johannes Schwartz</figcaption>
+                        <img src="img/nat-9.jpg" alt="Person on tour" class="story__img">
+                    </figure>
+                    <h3 class="heading__tertiary  u-margin-bottom-xs">Wow! My life is completely different now!</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi inventore quis pariatur vel voluptatem maiores, incidunt quam hic sapiente doloremque, officia deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi inventore quis pariatur vel voluptatem maiores, incidunt quam hic sapiente doloremque, officia deserunt.</p>
+                </div>
+                <a href="#" class="btn btn--text btn--animated">Read all stories &rarr;</a>
+            </div>
         </section>
 
     </main>

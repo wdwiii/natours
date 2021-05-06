@@ -31,11 +31,21 @@
 }
 
 .section-tours {
+    background: $color-gray-light-1;
     margin-top: -10vh;
-    padding: 25rem 0;
+    padding: 25rem 0 3rem;
 
     &__content-wrapper {
             justify-content: center;
     }
+}
 
+.section-stories {
+    padding: 10rem 0;
+    position: relative;
+
+    &__content-wrapper {
+        align-items: center;
+        flex: 0 1 75%;
+    }
 }

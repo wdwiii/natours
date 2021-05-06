@@ -1,7 +1,6 @@
 .content-wrapper {
     box-sizing: border-box;
     display: inherit;
-    flex: 1 1 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -9,7 +8,7 @@
 }
 
 .full-width {
-    flex: 1 1 100%;
+    flex: 0 1 100%;
 }
 
 .half-width {
