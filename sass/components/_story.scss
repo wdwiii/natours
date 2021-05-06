@@ -1,5 +1,5 @@
 .story {
-    background-color: rgba($color-white, .4);
+    background-color: rgba($color-white, .75);
     border-radius: $default-border-radius;
     box-shadow: $shadow-1;
     transform: skewX(-7deg);
@@ -53,10 +53,9 @@
         transform: translateX(-15%) scale(1);
     }
 
-}
+    .heading__tertiary,
+    .paragraph {
+        transform: skewX(7deg);
+    }
 
-
-.heading__tertiary,
-.paragraph {
-    transform: skewX(7deg);
 }
