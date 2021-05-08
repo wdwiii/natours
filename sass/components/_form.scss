@@ -1,0 +1,53 @@
+.form {
+    //individual form items
+    &__group {
+        @extend .u-padding-bottom-small;
+    }
+
+    //text fields
+    &__input {
+        background-color: rgba($color-white, .6);
+        border: none;
+        border-bottom: 3px solid transparent;
+        border-radius: 5px;
+        color: inherit;
+        display: block;
+        font-family: inherit;
+        font-size: $default-font-size;
+        padding: 1rem 1.5rem;
+        width: 80%;
+
+        //when text field is clicked and active
+        &:focus {
+            border-bottom: 3px solid $color-primary;
+            box-shadow: 3px 3px 5px rgba($color-black, .2);
+            outline: none;
+
+            //if input is not in valid format
+            &:invalid {
+                border-bottom: 3px solid $color-secondary-dark;
+            }
+        }
+
+        //styles for input text placeholder
+        &::-webkit-input-placeholder {
+            color: $color-gray-dark-2;
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: 1.5rem;
+        margin-top: .5rem;
+        transition: all .3s;
+    }
+
+    //slide down animation for form field label
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        transform: translateY(-4rem);
+        visibility: hidden;
+    }
+}
