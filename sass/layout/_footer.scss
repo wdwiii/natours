@@ -1,0 +1,43 @@
+.footer {
+    background: $color-gray-dark;
+    
+    &__content-wrapper {
+
+    }
+
+    &__logo-box {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    &__logo {
+        height: 10rem;
+    }
+
+    &__nav {
+        justify-content: center;
+    }
+
+    &__list {
+        flex-basis: 60%;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    &__item {
+        display: inline;
+    }
+
+    &__link {
+
+    }
+
+    &__copyright {
+        justify-content: center;
+
+        &-text {
+            flex-basis: 60%;
+        }
+    }
+
+}
