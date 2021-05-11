@@ -1,5 +1,5 @@
 .btn {
-
+    &,
     &:link,
     &:visited {
     border-radius: $btn-border-radius;
@@ -10,6 +10,13 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: all .2s;
+
+    /* These are changes for <button> elements. These styles will not apply to anchor tags. */
+
+    border: none;
+
+
+
 
     }
 
@@ -90,5 +97,5 @@
 }
 
 .btn-wrapper {
-    @extend .u-margin-vertical-big;
+
 }
