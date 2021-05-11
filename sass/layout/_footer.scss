@@ -1,8 +1,14 @@
 .footer {
-    background: $color-gray-dark;
-    
+    background: $color-gray-dark-3;
+    color: $color-white;
+    font-size: 1.3rem;
+
     &__content-wrapper {
 
+        & > *:not(:first-child) > * {
+            border-top: 1px solid $color-gray-light-1;
+            padding: 0 2.5rem;
+        }
     }
 
     &__logo-box {
@@ -19,7 +25,7 @@
     }
 
     &__list {
-        flex-basis: 60%;
+        flex-basis: 70%;
         list-style: none;
         justify-content: space-around;
     }
@@ -29,14 +35,27 @@
     }
 
     &__link {
+        color: $color-white;
+        text-decoration: none;
 
+        &:active,
+        &::after,
+        &:visited {
+        color: $color-white;
+        text-decoration: none;
+        }
+
+        &--credit {
+            text-transform: uppercase;
+        }
     }
 
     &__copyright {
         justify-content: center;
 
         &-text {
-            flex-basis: 60%;
+            flex-basis: 70%;
+            text-align: justify;
         }
     }
 
