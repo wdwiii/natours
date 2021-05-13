@@ -79,7 +79,7 @@
 
         &-button {
             border: 5px solid $color-primary;
-            border-radius: 100%;
+            border-radius: 50%;
             display: inline-block;
             height: 3rem;
             position: absolute;
@@ -90,15 +90,12 @@
             &::after {
                 content: "";
                 background-color: $color-primary;
-                border-radius: 100%;
+                border-radius: 50%;
                 display: block;
                 height: 1.4rem;
                 width: 1.4rem;
                 opacity: 0;
-                position: absolute;
-                    left: 50%;
-                    top: 50%;
-                transform: translate(-50%, -50%);
+                @include centerAbsolute;
             }
         }
 
