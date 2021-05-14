@@ -4,6 +4,7 @@
     font-size: 1.3rem;
 
     &__content-wrapper {
+        flex-wrap: wrap;
 
         & > *:not(:first-child) > * {
             border-top: 1px solid $color-gray-light-1;
