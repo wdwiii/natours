@@ -1,30 +1,31 @@
-.content-wrapper {
+body {
     box-sizing: border-box;
-    display: inherit;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-
 }
 
 .full-width {
+    display: flex;
     flex: 0 0 100%;
 }
 
 .half-width {
+    display: flex;
     flex: 0 0 50%;
 }
 
 .third-width {
+    display: flex;
     flex: 0 0 33.33%;
 
 }
 
 .quarter-width {
+    display: flex;
     flex: 0 0 25%;
 }
 
-.main-section {
+.flex-grid {
     display: flex;
         flex-basis: 100%;
         justify-content: center;
