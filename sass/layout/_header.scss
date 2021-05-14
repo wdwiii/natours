@@ -12,37 +12,39 @@ height: 95vh;
 
 
     &__content-wrapper {
-      flex-basis: 95%;
-      justify-content: flex-start;
-      height: 75vh;
-      padding-top: 2rem;
-      position: relative;
+        align-items: flex-start;
+        flex-basis: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 75vh;
+        padding-top: 2rem;
+        position: relative;
     }
 
     &__nav-area {
-      flex-direction: row;
-      justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     &__logo {
-      height: 3.5rem;
+        height: 3.5rem;
     }
 
     &__logo-box {
-
+        align-items: center;
+        height: 17%;
     }
 
     &__menu-icon {
-    color: $color-white;
-    font-size: 2rem;
+        color: $color-white;
+        font-size: 2rem;
     }
 
     &__text-box {
-    position: absolute;
-       top: 80%;
-       left: 50%;
-       transform: translate(-50%, -80%); //Centers the text box for the heading-primary
-    text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
 
 }

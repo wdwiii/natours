@@ -4,10 +4,11 @@
     font-size: 1.3rem;
 
     &__content-wrapper {
+        flex-wrap: wrap;
 
         & > *:not(:first-child) > * {
             border-top: 1px solid $color-gray-light-1;
-            padding: 0 2.5rem;
+            padding: .5rem 2.5rem;
         }
     }
 
@@ -47,6 +48,15 @@
 
         &--credit {
             text-transform: uppercase;
+        }
+
+        &--gray {
+
+            &:active,
+            &::after,
+            &:visited {
+            color: #cacaca;
+            }
         }
     }
 

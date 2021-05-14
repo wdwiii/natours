@@ -47,6 +47,8 @@
     &__content-wrapper {
         align-items: center;
         flex: 0 1 75%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

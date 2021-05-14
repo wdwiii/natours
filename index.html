@@ -29,25 +29,35 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 
-<<body class="flex-col">
+<body class="flex-col">
+
+    <div class="navigation">
+        <input type="checkbox" name="navigation__checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link"><span>01</span> About Natours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>02</span> Your Benefits</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>03</span> Popular Tours</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>04</span> Stories</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>05</span> Book now</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <header class="header flex">
 
-        <div class="header__content-wrapper flex-col">
-            <div class="header__nav-area flex">
-                <div class="header__logo-box">
-                    <img src="img/logo-white.png" alt="Logo" class="header__logo">
-                </div>
-                <div class="header__nav-menu">
-                    <i class="fas fa-bars header__menu-icon"></i>
-                </div>
+        <div class="header__content-wrapper flex">
+            <div class="header__logo-box full-width">
+                <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
-            <div class="header__text-box">
-                <h1 class="heading-primary">
+            <div class="header__text-box flex">
+                <h1 class="heading-primary full-width">
                     <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
-                <div class="btn-wrapper u-margin-vertical-big">
+                <div class="btn-wrapper u-margin-vertical-med">
                     <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
                 </div>
             </div>
@@ -56,13 +66,13 @@
     </header>
 
     <main class="main">
-        <section class="main-section section-about">
+        <section class="flex-grid section-about">
             <div class="heading-secondary u-text-center">
                 <h2 class="heading-secondary__main u-margin-bottom-big">
                     Exciting tours for adventurous people.
                 </h2>
             </div>
-            <div class="section-about__content-wrapper content-wrapper">
+            <div class="section-about__content-wrapper flex-grid">
                 <div class="section-about__text-box half-width">
                     <div class="section-about__text-container .u-padding-right-med">
                         <h3 class="heading__tertiary  u-margin-bottom-xs">You're going to fall in love with nature.</h3>
@@ -82,8 +92,8 @@
             </div>
         </section>
 
-        <section class="main-section section-feature">
-            <div class="section-feature__content-wrapper content-wrapper">
+        <section class="flex-grid section-feature">
+            <div class="section-feature__content-wrapper flex-grid">
                 <div class="feature-box feature-box--fb1 quarter-width flex">
                     <div class="feature-box__content-wrapper u-padding-small flex-col">
                         <i class="feature-box__icon feature-box__icon--icon1 u-margin-bottom-small"></i>
@@ -115,14 +125,14 @@
             </div>
         </section>
 
-        <section class="main-section section-tours">
+        <section class="flex-grid section-tours">
             <div class="heading-secondary u-text-center">
                 <h2 class="heading-secondary__main u-margin-bottom-big">
                     Most popular tours
                 </h2>
             </div>
 
-            <div class="section-tours__content-wrapper content-wrapper third-width">
+            <div class="section-tours__content-wrapper third-width">
                 <div class="card">
                     <div class="card__side card__side--front card__side--front-1">
                         <div class="card__picture card__picture-1 ">
@@ -152,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="section-tours__content-wrapper content-wrapper third-width">
+            <div class="section-tours__content-wrapper third-width">
                 <div class="card">
                     <div class="card__side card__side--front card__side--front-2">
                         <div class="card__picture card__picture-2">
@@ -182,7 +192,7 @@
                 </div>
             </div>
 
-            <div class="section-tours__content-wrapper content-wrapper third-width">
+            <div class="section-tours__content-wrapper third-width">
                 <div class="card">
                     <div class="card__side card__side--front card__side--front-3">
                         <div class="card__picture card__picture-3">
@@ -217,7 +227,7 @@
             </div>
         </section>
 
-        <section class="main-section section-stories">
+        <section class="flex-grid section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay loop muted>
                     <source src="img/video.mp4" type="video/mp4">
@@ -231,7 +241,7 @@
                 </h2>
             </div>
 
-            <div class="section-stories__content-wrapper content-wrapper flex-col">
+            <div class="section-stories__content-wrapper flex">
                 <div class="story">
                     <figure class="story__shape">
                         <figcaption class="story__caption">Luna Wibsey</figcaption>
@@ -253,8 +263,8 @@
             </div>
         </section>
 
-        <section class="main-section section-booking">
-            <div class="section-booking__content-wrapper content-wrapper">
+        <section class="flex-grid section-booking">
+            <div class="section-booking__content-wrapper flex">
                 <div class="section-booking__text-box flex-col u-padding-left-med">
                     <div class="heading-secondary u-text-left">
                         <h2 class="heading-secondary__main u-margin-vertical-med">
@@ -305,13 +315,13 @@
                     <li class="footer__item"><a href="" class="footer__link">Company</a></li>
                     <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
                     <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
-                    <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+                    <li class="footer__item"><a href="" class="footer__link">Privacy  Policy</a></li>
                     <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
                 </ul>
             </nav>
             <div class="footer__copyright half-width flex">
                 <p class="footer__copyright-text">
-                    This website contains original content developed by <a href="#" class="footer__link footer__link--credit">Jonas Schmedtmann</a> for <a href="#" class="footer__link footer__link--credit">Advanced CSS and SASS</a>. Styles modified by <a href="#" class="footer__link">Willie Whitfield</a> to include the Flexbox Layout. Copyright &copy; by <a href="#" class="footer__link">Jonas Schmedtmann</a>.
+                    This website contains original content developed by <a href="#" class="footer__link footer__link--credit footer__link--gray">Jonas Schmedtmann</a> for <a href="#" class="footer__link footer__link--credit footer__link--gray">Advanced CSS and SASS</a>. Styles modified by <a href="#" class="footer__link footer__link--gray">Willie Whitfield</a> to include the Flexbox Layout. Copyright &copy; by Jonas Schmedtmann.
                 </p>
             </div>
 
