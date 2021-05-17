@@ -1,0 +1,57 @@
+.popup {
+    align-items: center;
+    background: rgba($color-black, .85);
+    border: 1rem inset #5f9841;
+    justify-content: center;
+    position: fixed;
+        top: 0;
+        left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4000;
+
+
+    &__content {
+        border-radius: $default-border-radius;
+        flex: 0 0 75%;
+        height: 50rem;
+        overflow: hidden;
+
+    }
+
+    &__img-container {
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        background-size: cover;
+        @extend .full-width;
+
+        &--1 {
+            background-image: url('../img/nat-8.jpg');
+        }
+
+        &--2 {
+            background-image: url('../img/nat-9.jpg');
+        }
+    }
+
+    &__text-box {
+        align-items: center;
+        background-color: $color-white;
+        flex-grow: 1;
+    }
+
+    &__text {
+        @extend .paragraph;
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule: 1px solid $color-gray-light-2;
+        font-size: 1.4rem;
+        hyphens: auto;
+    }
+
+    .btn-wrapper {
+        padding: 1rem 0;
+    }
+}
