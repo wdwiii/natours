@@ -6,9 +6,13 @@
     position: fixed;
         top: 0;
         left: 0;
+    opacity: 0;
+    transition: all .3s;
+    visibility: hidden;
     height: 100vh;
     width: 100vw;
     z-index: 4000;
+
 
 
     &__content {
@@ -16,11 +20,19 @@
         flex: 0 0 75%;
         height: 50rem;
         overflow: hidden;
+        transform: scale(0);
+        transition: all .5s .2s;
 
     }
 
-    &__img-container {
+    &__left-div,
+    &__right-div {
         flex-wrap: wrap;
+    }
+
+    &__right-div {
+        background-color: $color-white;
+        justify-content: flex-end;
     }
 
     &__image {
@@ -37,8 +49,7 @@
     }
 
     &__text-box {
-        align-items: center;
-        background-color: $color-white;
+        align-self: center;
         flex-grow: 1;
     }
 
@@ -53,5 +64,23 @@
 
     .btn-wrapper {
         padding: 1rem 0;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        transform: scale(1);
+    }
+
+    &__close {
+        color: $color-gray-dark-2;
+        font-size: 2rem;
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
