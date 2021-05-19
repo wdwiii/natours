@@ -9,6 +9,10 @@
     -moz-perspective: 150rem; //For Firefox compatibility
     position: relative;
 
+    @include respond(phone) {
+        width: 100%;
+    }
+
     &__side {
         backface-visibility: hidden; //Hides content of the card on "back side" after rotation
         border-radius: 10px;
@@ -156,5 +160,18 @@
     &__price-value {
         font-weight: 100;
         font-size: 6rem;
+    }
+}
+
+.section-tours__content-wrapper.third-width {
+
+    @include respond(tablet-por) {
+        flex: 0 0 55%;
+        //Allows card divs to occupy their own row
+        margin: 0 15rem 5rem;
+    }
+
+    @include respond(phone) {
+        flex: 0 0 75%;
     }
 }
