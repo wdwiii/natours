@@ -3,6 +3,27 @@
     width: 100%;
     position: relative;
 
+    @include respond(desktop-large) {
+        height: 115%;
+        width: 100%;
+    }
+
+    @include respond(tablet-land) {
+        height: 40rem;
+        width: 67rem;
+    }
+
+    @include respond(tablet-por) {
+        margin-top: 5rem;
+        width: 60rem;
+    }
+
+    @include respond(phone) {
+        margin: 5rem;
+        width: 45rem;
+        height: 30rem;
+    }
+
     &__photo {
         box-shadow: $shadow-2;
         border-radius: 2px;
@@ -10,6 +31,7 @@
         position: absolute;
         transition: .3s;
         width:  55%;
+
 
         &:hover {
             outline: 1rem solid $color-primary;
