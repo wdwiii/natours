@@ -10,6 +10,11 @@ justify-content: center;
 clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //Creates polygon shape for the header
 height: 95vh;
 
+@include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
 
     &__content-wrapper {
         align-items: flex-start;
@@ -32,7 +37,12 @@ height: 95vh;
 
     &__logo-box {
         align-items: center;
-        height: 17%;
+        height: 10%;
+
+        @include respond(tablet-por) {
+            height: 13%;
+            padding-left: 2.5rem;
+        }
     }
 
     &__menu-icon {
