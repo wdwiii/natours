@@ -7,6 +7,10 @@
     padding-left: 8rem;
     @extend .u-margin-bottom-med;
 
+    @include respond(phone) {
+        padding: 3.5rem 3.5rem 1.5rem 5rem;
+        transform: skewX(0);
+    }
 
     &__shape {
 
@@ -21,6 +25,10 @@
         width: 15rem;
         -webkit-clip-path: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
+
+        @include respond(phone) {
+            transform: translateX(-2rem) skewX(0);
+        }
     }
 
     &__img {
@@ -56,6 +64,10 @@
     .heading__tertiary,
     .paragraph {
         transform: skewX(7deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
 }
