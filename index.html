@@ -82,9 +82,25 @@
                 </div>
                 <div class="section-about__img-container half-width">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo-1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="photo-2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="photo-3" class="composition__photo composition__photo--p3">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 37vw, 290px"
+                            src="img/nat-1-large.jpg"
+                            alt="photo-1"
+                            class="composition__photo composition__photo--p1">
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 37vw, 290px"
+                            src="img/nat-2-large.jpg"
+                            alt="photo-2"
+                            class="composition__photo composition__photo--p2">
+
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 37vw, 290px"
+                            src="img/nat-3-large.jpg"
+                            alt="photo-3"
+                            class="composition__photo composition__photo--p3">
+
                     </div>
                 </div>
             </div>
@@ -301,7 +317,7 @@
         <div class="footer__content-wrapper content-wrapper full-width">
             <picture class="footer__logo flex u-margin-bottom-big">
                 <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
             </picture>
             <nav class="footer__nav half-width flex">
                 <ul class="footer__list flex">
