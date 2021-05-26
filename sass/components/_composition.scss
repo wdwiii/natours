@@ -3,6 +3,28 @@
     width: 100%;
     position: relative;
 
+    @include respond(desktop-large) {
+        height: 115%;
+        width: 100%;
+    }
+
+    @include respond(tablet-land) {
+        height: 40rem;
+        width: 67rem;
+    }
+
+    @include respond(tablet-por) {
+        margin-top: 5rem;
+        width: 70rem;
+        height: 45rem;
+    }
+
+    @include respond(phone) {
+        margin: 5rem;
+        width: 50rem;
+        height: 35rem;
+    }
+
     &__photo {
         box-shadow: $shadow-2;
         border-radius: 2px;
@@ -11,11 +33,20 @@
         transition: .3s;
         width:  55%;
 
+        @include respond(phone) {
+            outline-offset: .5rem;
+        }
+
+
         &:hover {
             outline: 1rem solid $color-primary;
             box-shadow: $shadow-3;
             transform: scale(1.1) translateY(5px);
             z-index: 10;
+
+            @include respond(phone) {
+                outline: .5rem solid $color-primary;
+            }
         }
 
 

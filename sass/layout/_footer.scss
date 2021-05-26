@@ -9,30 +9,50 @@
         & > *:not(:first-child) > * {
             border-top: 1px solid $color-gray-light-1;
             padding: .5rem 2.5rem;
+
+            @include respond(phone) {
+
+            }
         }
     }
 
-    &__logo-box {
+    &__logo {
         flex-basis: 100%;
         justify-content: center;
     }
 
-    &__logo {
-        height: 10rem;
-    }
-
     &__nav {
         justify-content: center;
+
+        @include respond(phone) {
+            flex: 0 0 100%;
+        }
     }
 
     &__list {
         flex-basis: 70%;
         list-style: none;
         justify-content: space-around;
+
+        @include respond(tablet-por) {
+            flex-basis: 75%;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @include respond(phone) {
+            flex-basis: 90%;
+            flex-direction: row;
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__item {
         display: inline;
+
+        @include respond(tablet-por) {
+            padding: .5rem 0;
+        }
     }
 
     &__link {
@@ -63,9 +83,22 @@
     &__copyright {
         justify-content: center;
 
+        @include respond(phone) {
+            flex: 0 0 100%;
+        }
+
         &-text {
             flex-basis: 70%;
             text-align: justify;
+
+            @include respond(tablet-por) {
+                flex-basis: 75%;
+            }
+
+            @include respond(phone) {
+                flex-basis: 90%;
+                border-top: none !important;
+            }
         }
     }
 

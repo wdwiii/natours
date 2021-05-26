@@ -19,12 +19,11 @@
 
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <script src="https://kit.fontawesome.com/cf08a85db8.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/cf08a85db8.js" crossorigin="anonymous"></script> -->
 
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -53,12 +52,12 @@
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
             <div class="header__text-box flex">
-                <h1 class="heading-primary full-width">
+                <h1 class="heading-primary full-width u-margin-bottom-small">
                     <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
                 <div class="btn-wrapper u-margin-vertical-med">
-                    <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+                    <a href="#section-tours" class="btn btn--white btn--animated">Discover Our Tours</a>
                 </div>
             </div>
         </div>
@@ -67,14 +66,12 @@
 
     <main class="main">
         <section class="flex-grid section-about">
-            <div class="heading-secondary u-text-center">
-                <h2 class="heading-secondary__main u-margin-bottom-big">
-                    Exciting tours for adventurous people.
-                </h2>
-            </div>
+            <h2 class="heading-secondary u-margin-bottom-big" id="section-about">
+                Exciting tours for adventurous people.
+            </h2>
             <div class="section-about__content-wrapper flex-grid">
                 <div class="section-about__text-box half-width">
-                    <div class="section-about__text-container .u-padding-right-med">
+                    <div class="section-about__text-container u-padding-horizontal-small">
                         <h3 class="heading__tertiary  u-margin-bottom-xs">You're going to fall in love with nature.</h3>
                         <p class="paragraph"> Punde, suscipit nemo commodi accusantium! Animi, consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, magnam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptas molestias alias dolore harum! Fugit. </p>
                         <h3 class="heading__tertiary  u-margin-bottom-xs">Live adventures like you never have before.</h3>
@@ -84,16 +81,32 @@
                 </div>
                 <div class="section-about__img-container half-width">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo-1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="photo-2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="photo-3" class="composition__photo composition__photo--p3">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 37vw, 290px"
+                            src="img/nat-1-large.jpg"
+                            alt="photo-1"
+                            class="composition__photo composition__photo--p1">
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 37vw, 290px"
+                            src="img/nat-2-large.jpg"
+                            alt="photo-2"
+                            class="composition__photo composition__photo--p2">
+
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 37vw, 290px"
+                            src="img/nat-3-large.jpg"
+                            alt="photo-3"
+                            class="composition__photo composition__photo--p3">
+
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="flex-grid section-feature">
-            <div class="section-feature__content-wrapper flex-grid">
+            <div class="section-feature__content-wrapper flex-grid" id="section-feature">
                 <div class="feature-box feature-box--fb1 quarter-width flex">
                     <div class="feature-box__content-wrapper u-padding-small flex-col">
                         <i class="feature-box__icon feature-box__icon--icon1 u-margin-bottom-small"></i>
@@ -126,11 +139,9 @@
         </section>
 
         <section class="flex-grid section-tours">
-            <div class="heading-secondary u-text-center">
-                <h2 class="heading-secondary__main u-margin-bottom-big">
-                    Most popular tours
-                </h2>
-            </div>
+            <h2 class="heading-secondary u-margin-bottom-big" id="section-about">
+                Most popular tours
+            </h2>
 
             <div class="section-tours__content-wrapper third-width">
                 <div class="card">
@@ -156,7 +167,7 @@
                         <div class="card__cta flex-col">
                             <p class="card__price-only">Only</p>
                             <p class="card__price-value">$297</p>
-                            <a href="#" class="btn btn--white btn--animated u-margin-top-big">Book now</a>
+                            <a href="#popup" class="btn btn--white btn--animated u-margin-top-big">Book now</a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +197,7 @@
                         <div class="card__cta flex-col">
                             <p class="card__price-only">Only</p>
                             <p class="card__price-value">$497</p>
-                            <a href="#" class="btn btn--white btn--animated u-margin-top-big">Book now</a>
+                            <a href="#popup" class="btn btn--white btn--animated u-margin-top-big">Book now</a>
                         </div>
                     </div>
                 </div>
@@ -216,7 +227,7 @@
                         <div class="card__cta flex-col">
                             <p class="card__price-only">Only</p>
                             <p class="card__price-value">$897</p>
-                            <a href="#" class="btn btn--white btn--animated u-margin-top-big">Book now</a>
+                            <a href="#popup" class="btn btn--white btn--animated u-margin-top-big">Book now</a>
                         </div>
                     </div>
                 </div>
@@ -227,7 +238,7 @@
             </div>
         </section>
 
-        <section class="flex-grid section-stories">
+        <section class="flex-grid section-stories" id="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay loop muted>
                     <source src="img/video.mp4" type="video/mp4">
@@ -235,11 +246,9 @@
                         This browser is not supported
                 </video>
             </div>
-            <div class="heading-secondary u-text-center">
-                <h2 class="heading-secondary__main u-margin-bottom-big">
-                    We make people genuinely happy
-                </h2>
-            </div>
+            <h2 class="heading-secondary u-margin-bottom-big" id="section-about">
+                We make people genuinely happy
+            </h2>
 
             <div class="section-stories__content-wrapper flex">
                 <div class="story">
@@ -263,14 +272,12 @@
             </div>
         </section>
 
-        <section class="flex-grid section-booking">
+        <section class="flex-grid section-booking" id="section-booking">
             <div class="section-booking__content-wrapper flex">
                 <div class="section-booking__text-box flex-col u-padding-left-med">
-                    <div class="heading-secondary u-text-left">
-                        <h2 class="heading-secondary__main u-margin-vertical-med">
-                            Most popular tours
-                        </h2>
-                    </div>
+                    <h2 class="heading-secondary u-margin-vertical-small" id="section-about">
+                        Most popular tours
+                    </h2>
                     <div class="section-booking__form flex">
                         <form class="form full-width flex" action="#">
                             <div class="form__group">
@@ -307,9 +314,10 @@
 
     <footer class="footer u-padding-vertical-big flex">
         <div class="footer__content-wrapper content-wrapper full-width">
-            <figure class="footer__logo-box flex u-margin-bottom-big">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
-            </figure>
+            <picture class="footer__logo flex u-margin-bottom-big">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+            </picture>
             <nav class="footer__nav half-width flex">
                 <ul class="footer__list flex">
                     <li class="footer__item"><a href="" class="footer__link">Company</a></li>
@@ -327,6 +335,28 @@
 
         </div>
     </footer>
+
+    <div class="popup full-width" id="popup">
+        <div class="popup__content flex u-margin-vertical-xl">
+            <div class="popup__left-div third-width">
+                <figure class="popup__image popup__image--1"></figure>
+                <figure class="popup__image popup__image--2"></figure>
+            </div>
+            <div class="popup__right-div flex u-padding-med">
+                <a href="#section-tours" class="popup__close"><i class="fas fa-times"></i></a>
+                <div class="popup__text-box">
+                    <div class="heading-secondary u-text-left">
+                        <h2 class="heading-secondary__main u-margin-vertical-small">Start booking now</h2>
+                    </div>
+                    <h3 class="heading__tertiary  u-margin-bottom-xs">Important &ndash; PLease read the terms and conditions first</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi inventore quis pariatur vel voluptatem maiores, incidunt quam hic sapiente doloremque, officia deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi inventore quis pariatur vel voluptatem maiores, incidunt quam hic sapiente doloremque, officia deserunt.</p>
+                    <div class="btn-wrapper form__button">
+                        <button class="btn btn--green btn--animated">Book now</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>

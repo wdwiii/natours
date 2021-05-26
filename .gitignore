@@ -1,6 +1,8 @@
 .DS_Store
 Thumbs.db
 node_modules/
-css/fontawesome.css
-css/main.css
+css/main.comp.css
+css/main.concat.css
+css/main.prefix.css
+
 commit-notes
