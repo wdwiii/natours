@@ -28,22 +28,22 @@ Media Query Manager
 @mixin respond($breakpoint) {
 
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) //600px divided by 16px
+        @media only screen and (max-width: 37.5em) //600px divided by 16px
         { @content };
     }
 
     @if $breakpoint == tablet-por {
-        @media (max-width: 56.25em) //900px divided by 16px
+        @media only screen and (max-width: 56.25em) //900px divided by 16px
         { @content };
     }
 
     @if $breakpoint == tablet-land {
-        @media (max-width: 75em) //1200px divided by 16px
+        @media only screen and (max-width: 75em) //1200px divided by 16px
         { @content };
     }
 
     @if $breakpoint == desktop-large {
-        @media (min-width: 112.5em) //1800px divided by 16px
+        @media only screen and (min-width: 112.5em) //1800px divided by 16px
         { @content };
     }
 }
