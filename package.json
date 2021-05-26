@@ -6,8 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/main.css -w",
     "devserver": "live-server",
-    "start":"npm-run-all --parallel devserver watch:sass",
-    
+    "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/main.comp.css",
     "concat:css": "concat -o css/main.concat.css css/main.comp.css",
     "prefix:css": "postcss css/main.concat.css --use autoprefixer -o css/main.prefix.css",
@@ -26,7 +25,7 @@
   },
   "homepage": "https://github.com/wdwiii/natours#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "concat": "^1.0.3",
     "node-sass": "^5.0.0",
     "postcss": "^8.3.0",
